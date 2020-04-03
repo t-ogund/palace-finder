@@ -6,13 +6,13 @@
     <script src="https://kit.fontawesome.com/e448e771e2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Palace Finder</title>
 </head>
 <body>
     <div class="container">
         <div class="row">
             <div class="col">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <nav class="navbar navbar-expand-md navbar-light bg-white" style="height: 80px;">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
@@ -21,7 +21,7 @@
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li class="nav-item">
-                        <a class="nav-link" href="#">Buy <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="buy.html">Buy <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                         <a class="nav-link" href="#">Rent</a>
@@ -35,46 +35,155 @@
             </div>
         </div>
     </div>
-    <!-- <div class="container-fluid"> -->
+    <div class="container-fluid splash-image">
+        <div class="row align-items-center justify-content-center h-100">
+            <div class="col-4 sticky-top">
+                <h1></h1>
+                <h3></h3>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" style="width: 500px; height: 60px; border-radius: 2px;" type="search" placeholder="Enter an address, neighborhood, city or ZIP code" aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="container"> -->
         <div class="row">
-            <div class="col-md">
-                <div class="position-absolute d-flex justify-content-center">
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-                    <h1></h1>
-                </div>
-                <img src="img\house.jpg" class="img-fluid vh-100" alt="Responsive image">  
+            <div class="col">
+                <h3 class="text-center mt-4">With numerous listings and updates,<br>you're always in the know.</h3>
             </div>
         </div>
     <!-- </div> -->
+    <!-- <img src="img\house.jpg" class="img-fluid vh-100" alt="Responsive image"> -->
+    <div class="container" id="card-section">
+        <div class="row mt-5 text-center card-group">
+            
+            <div class="card mx-5 border">
+                <div class="card-body">
+                    <h2 class="card-title text-primary" style="font-size: 4.5rem"><i class="fas fa-dollar-sign"></i></h2>
+                    <h2 class="card-subtitle mb-2 text-muted">Buy a home</h2>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Search homes</a>
+                </div>
+            </div>
+        
+        
+            <div class="card mx-5 border">
+                <div class="card-body">
+                    <h2 class="card-title text-primary" style="font-size: 4.5rem"><i class="fas fa-sign"></i></h2>
+                    <h2 class="card-subtitle mb-2 text-muted">Sell a home</h2>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">See your options</a>
+                </div>
+            </div>
+        
+        
+            <div class="card mx-5 border">
+                <div class="card-body">
+                    <h2 class="card-title text-primary" style="font-size: 4.5rem;"><i class="fas fa-truck-moving"></i></h2>
+                    <h2 class="card-subtitle mb-2 text-muted">Rent a home</h2>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Find Rentals</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row text-center">
+            <div class="col-sm-6 col-md">
+                <a class="ml-5 drop-down-arrow" data-toggle="collapse" href="#realEstate" role="button" aria-expanded="false" aria-controls="realEstate" style="color: black; font-weight: 800; font-family: calibri">
+                    Real Estate<i class="fas fa-angle-down"></i>
+                </a>
+                <div class="collapse" id="realEstate">
+                    <div>
+                      <ul class="realEstateLocations text-primary">
+                          <li>Browse all homes</li>
+                          <li>Albuquerque real estate</li>
+                          <li>Atlanta real estate</li>
+                          <li>Austin real estate</li>
+                          <li>Baltimore real estate</li>
+                          <li>Boston real estate</li>
+                      </ul>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-6 col-md">
+                <a class="ml-5 drop-down-arrow" data-toggle="collapse" href="#rentals" role="button" aria-expanded="false" aria-controls="rentals" style="color: black; font-weight: 800; font-family: calibri">
+                    Rentals<i class="fas fa-angle-down"></i>
+                </a>
+                <div class="collapse" id="rentals">
+                    <div>
+                        <ul class="rentals text-primary">
+                            <li>Rental Buildings</li>
+                            <li>Atlanta apartments for rent</li>
+                            <li>Austin apartments for rent</li>
+                            <li>Baltimore apartments for rent</li>
+                            <li>Boston apartments for rent</li>
+                            <li>Bronx apartments for rent</li>
+                        </ul>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-6 col-md">
+                <a class="ml-5 drop-down-arrow" data-toggle="collapse" href="#mortgageRates" role="button" aria-expanded="false" aria-controls="mortgageRates" style="color: black; font-weight: 800; font-family: calibri">
+                    Mortgage Rates<i class="fas fa-angle-down"></i>
+                </a>
+                <div class="collapse" id="mortgageRates">
+                    <div>
+                        <ul class="mortgageRates text-primary">
+                            <li>Current mortgage rates</li>
+                            <li>Alaska mortgage rates</li>
+                            <li>Alabama mortgage rates</li>
+                            <li>Arkansas mortgage rates</li>
+                            <li>Arizona mortgage rates</li>
+                            <li>California mortgage rates</li>
+                        </ul>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-6 col-md">
+                <a class="ml-5 drop-down-arrow" data-toggle="collapse" href="#browseHomes" role="button" aria-expanded="false" aria-controls="browseHomes" style="color: black; font-weight: 800; font-family: calibri">
+                    Browse Homes<i class="fas fa-angle-down"></i>
+                </a>
+                <div class="collapse" id="browseHomes">
+                    <div>
+                        <ul class="browseHomes text-primary">
+                            <li>California</li>
+                            <li>Texas</li>
+                            <li>New York</li>
+                            <li>Florida</li>
+                            <li>Illinois</li>
+                            <li>Pennsylvania</li>
+                        </ul>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
-        <div class="row card-group mt-5 text-center">
-            <div class="card mx-5 border h-10" style="width: 25rem; height: 300px">
-                <div class="card-body">
-                  <h2 class="card-title text-primary" style="font-size: 4.5rem"><i class="fas fa-dollar-sign"></i></h2>
-                  <h2 class="card-subtitle mb-2 text-muted">Buy a home</h2>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Button</a>
-                </div>
-              </div>
-              <div class="card mx-5 border" style="width: 25rem;">
-                <div class="card-body">
-                  <h2 class="card-title text-primary" style="font-size: 4.5rem"><i class="fas fa-sign"></i></h2>
-                  <h2 class="card-subtitle mb-2 text-muted">Sell a home</h2>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Button</a>
-                </div>
-              </div>
-              <div class="card mx-5 border" style="width: 25rem;">
-                <div class="card-body">
-                  <h2 class="card-title text-primary" style="font-size: 4.5rem;"><i class="fas fa-truck-moving"></i></h2>
-                  <h2 class="card-subtitle mb-2 text-muted">Rent a home</h2>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Button</a>
-                </div>
-              </div>
+        <div class="row">
+            <div class="col">
+                <hr class="mt-5 mb-5">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Help</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                </ul>
+                <hr class="mt-5 mb-5">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer-image">
+        <div class="row">
+            <div class="col">
+
+            </div>
         </div>
     </div>
 
